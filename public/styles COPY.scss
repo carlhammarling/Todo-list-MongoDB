@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(87, 87, 87);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.green {
+    color: green;
+}
+
+.wrapper {
+    // border: 1px solid rgb(229, 229, 229);
+    padding: 2rem;
+    border-radius: .3rem;
+    box-shadow: 0px 10px 200px 0px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    width: 500px;
+
+     div {
+        margin-top: .5rem;
+        
+    }
+}
+
+input {
+    padding: .3rem;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: .3rem;
+
+    &:focus {
+        outline: 0px;
+    }
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    border-bottom: 1px solid grey;
+
+    button {
+        width: 100px;
+        padding:0.5rem 1rem;
+        border-radius: .3rem;
+        border: 2px solid rgb(255, 56, 89);
+        background-color: white;
+        transition: 200ms ease-out;
+        font-weight: 600;
+        color: rgb(255, 56, 89);
+        margin-left: 2rem;
+
+        &:hover {
+            background-color: rgb(255, 56, 89);
+            color: white;
+        }
+    }
+
+}
+
+
+
+
+
+.card form {
+    display: flex;
+    border: 1px solid black;
+    border-radius: .3rem;
+    
+
+    input {
+        flex: 1;
+        border: 0px;
+        padding-inline: 1rem;
+    }
+
+    button {
+        border: 0px;
+        background-color: white;
+        padding: 1rem;
+        border-radius: .4rem;
+        cursor: pointer;
+        transition: .1s ease-out;
+
+        &:hover {
+            color: rgb(255, 56, 89);
+        }
+    }
+
+
+}
+
+#output {
+    overflow: auto;
+}
+
+.line {
+    text-decoration: line-through;
+}
